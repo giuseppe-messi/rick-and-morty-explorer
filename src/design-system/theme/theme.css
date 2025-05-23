@@ -1,0 +1,50 @@
+:root {
+  font-family: "Helvetica Neue", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+
+  /* colors */
+  --color-bg: #f5f5f5;
+  --color-card: #fff;
+  --color-primary: #2c3e50;
+  --color-secondary: #468faf;
+  --color-border: #e0e0e0;
+  --color-title: #a7a7a7;
+
+  /* Typography */
+  --font-size-base: 1rem;
+
+  /* Buttons */
+  --btn-radius: 4px;
+
+  /* breakpoints */
+  --bp-sm: 576px;
+  --bp-md: 768px;
+  --bp-lg: 992px;
+  --bp-xl: 1200px;
+}
+
+.titleH2 {
+  font-size: 2rem;
+  margin-bottom: var(--space-lg);
+  color: var(--color-title);
+}
+
+@media (max-width: 768px) {
+  .titleH2 {
+    font-size: 1.5rem;
+  }
+}
