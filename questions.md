@@ -63,9 +63,9 @@ Fragments let us group together elements that don&#39;t share a common parent, i
 components must return a single element. Before fragments, we used to wrap elements in
 divs, which they didn&#39;t really mean anything, they were just containers which made DOMs
 longer with extra elements that weren&#39;t really needed.
-I couldn&#39;t think on any cases when using fragments might break the app, I looked it up, and
+I couldn&#39;t think on any cases when using fragments might break the app, I looked it up;
 when, for example, the DOM is created, if it is expected a single element for doing some
-animation for example, but multiple elements are found, the app might break. That is
+animation, as an example, but multiple elements are found, the app might break. That is
 because when DOM nodes are created, fragments don&#39;t exist (I knew this one) so if we
 have:
 
@@ -105,9 +105,6 @@ const withTheme = (WrappedComponent) => {
     return <WrappedComponent {...props} theme={theme} />;
   };
 };
-
-const Box = ({ theme }) => {};
-const ThemedBox = withTheme(Box);
 ```
 
 and use it:
@@ -133,7 +130,7 @@ fetch("api/v1/data")
   });
 ```
 
-**Async/Await (my favourite):**
+**Async/Await:**
 
 ```js
 try {
@@ -143,6 +140,8 @@ try {
   // handle error
 }
 ```
+
+Personally, I prefer async/await for its readability!
 
 **Callbacks:**
 
@@ -173,7 +172,7 @@ example.
 
 setState in class components takes 2 arguments, the new state that will update the old one,
 and a callback that runs after the state has been updated, the callback is optional.
-And in functional components, useState gives us 1 setter function, which we can call with
+In functional components, useState provides one setter function, which we can call with
 either a value (new state) or with a function if we want to update the state based on the
 previous value.
 
@@ -193,7 +192,7 @@ React batches updates for performance, making `setState` asynchronous.
 
 1. Replace class syntax with function.
 2. Replace `this.state` with `useState`.
-3. Replace `this.setState` with the setter from `useState`.
+3. Replace `this.setState({...})` with the setter from useState: `setValue(newValue)`.
 4. Replace lifecycle methods:
    - `componentDidMount` → `useEffect(() => { ... }, [])`
    - `componentDidUpdate` → `useEffect(() => { ... }, [deps])`
