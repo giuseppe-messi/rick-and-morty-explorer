@@ -9,7 +9,7 @@ A simple, small application showcasing a reusable Autocomplete Select component 
 1. **Clone the repository**
 
    ```bash
-   git clone
+   git clone https://github.com/giuseppe-messi/rick-and-morty-explorer.git
    cd into the repo just cloned
    ```
 
