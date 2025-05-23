@@ -6,27 +6,43 @@ A simple, small application showcasing a reusable Autocomplete Select component 
 
 ## 🚀 Getting Started
 
-1. **Clone the repository**
+1. **Open your terminal (or CLI of choice)**
+   and navigate to the directory where you’d like to clone the app.
+
+2. **Clone the repository**
 
    ```bash
    git clone https://github.com/giuseppe-messi/rick-and-morty-explorer.git
-   cd into the repo just cloned
    ```
 
-2. **Install dependencies**
+   then
+
+   ```bash
+   cd rick-and-morty-explorer
+   ```
+
+3. **Install dependencies**
 
    ```bash
    npm install
-   # or
-   yarn install
    ```
 
-3. **Start the development server**
+4. **Start the development server**
 
    ```bash
    npm run dev
-   # or
-   yarn dev
    ```
 
    The local server URL will be printed in your terminal.
+
+## 🧪 Testing
+
+5. **how to run the tests**
+
+   at the root level of the repository run:
+
+   ```bash
+   npm run test
+   ```
+
+   Test results will be displayed in your terminal
